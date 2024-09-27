@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div id="cardContainer" class="d-flex flex-wrap justify-content-center">
+      <!-- card - begin -->
+
+      <!-- card - end -->
+      <div class="card my-4 mx-4" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://serviceplan.blog/sp-content/uploads/2018/02/twelve18_street-art_k07.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Diana</h5>
+          <p class="card-text">artist unknown</p>
+          <a href="#" id="delete" class="btn btn-primary">delete</a>
+        </div>
+      </div>
+      <div class="card my-4 mx-4" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://a.storyblok.com/f/112937/568x464/39093c0af3/best_cities_street_art_hero.jpg/m/620x0/filters:quality(70)/"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Erica</h5>
+          <p class="card-text">some beautiful street art</p>
+          <a href="#" id="delete" class="btn btn-primary">delete</a>
+        </div>
+      </div>
+
+      <div class="card my-4 mx-4" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://serviceplan.blog/sp-content/uploads/2018/02/twelve18_street-art_k08.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Chrystal</h5>
+          <p class="card-text">classic example</p>
+          <a href="#" id="delete" class="btn btn-primary">delete</a>
+        </div>
+      </div>
+      <div class="card my-4 mx-4" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://serviceplan.blog/sp-content/uploads/2018/02/twelve18_street-art_k06.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">natalie</h5>
+          <p class="card-text">a good example of a great mural</p>
+          <a href="#" id="delete" class="btn btn-primary">delete</a>
+        </div>
+      </div>
+      <div class="card my-4 mx-4" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://i0.wp.com/blog.artsper.com/wp-content/uploads/2021/09/Drawing-57.sketchpad-2.png?resize=644%2C430&ssl=1"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" id="delete" class="btn btn-primary">delete</a>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">name</label>
+        <input type="text" class="form-control" id="name" placeholder="name" />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput2">link</label>
+        <input
+          type="text"
+          class="form-control"
+          id="linkForStreetArt"
+          placeholder="link"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">commments</label>
+        <textarea class="form-control" id="comments" rows="3"></textarea>
+      </div>
+      <button class="btn btn-primary" id="submitButton">create</button>
+    </form>
+    <!-- JS Libraries Go Here -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Custom JS Libraries Go Here -->
+    <script src="./index.js"></script>
+  </body>
+</html>
