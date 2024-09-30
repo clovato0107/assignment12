@@ -37,7 +37,7 @@ function showData(data) {
             <p class="card-text">
               ${data[index].comments}
             </p>
-            <button href="#" id="delete" class="btn btn-primary">delete</button>
+            <button id="delete"  class="btn btn-primary">delete</button>
           </div>
         </div>
       `;
@@ -45,9 +45,10 @@ function showData(data) {
 
   $("#cardContainer").append(myCard);
 }
-
+// delete function
 getData();
 const fetchDelete = async () => {
+  console.log("delete button Horayy!");
   try {
     let response = await fetch(link_endpoint_url + "/" + name, {
       method: "DELETE",
@@ -58,7 +59,27 @@ const fetchDelete = async () => {
     console.error("Error:", error);
   }
 };
-var delButton = document.getElementById("delete");
-delButtonbutton.addEventListener("click", function (event) {
+
+$("#delete").on("click", function () {
+  console.log("Whew it worked. ");
+});
+// post function
+const fetchPost = async () => {
+  try {
+    let response = await fetch(link_endpoint_url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify("object you are posting"),
+    });
+    let data = await response.json();
+    console.log(data); // Do something with the data here!
+  } catch (error) {
+    console.error("Error:", error);
+  }
+};
+var button = document.getElementById("button");
+button.addEventListener("click", function (event) {
   alert(event.target);
 });
